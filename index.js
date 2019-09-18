@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const router = require('./router'); 
-app.use("/location/", router);
+app.use("/forcasts/", router);
 // app.use(express.static('public'));
 
 app.get('/', (req, res) => {
